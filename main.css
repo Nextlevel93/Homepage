@@ -1,0 +1,55 @@
+
+
+.table{
+    background-color: #f2fafc;
+}
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.carousel-control-prev{
+    left: -75px;
+}
+.carousel-control-next{
+    right: -80px;
+}
+#format1{
+    font-style: italic;
+}
+
+html,body {
+    height: 100%;
+}
+
+footer{
+    background-color: #ffffff;
+    min-height: 30px;
+}
+.wrapper{
+    min-height: 100%;
+    padding-bottom: 30px;
+}
+
+footer{
+    margin-top: -30px;
+}
+
+#book{
+    margin: 10px;
+}
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+.incorrect{
+    text-align: center;
+    width: 30%;
+
+}
+ .correct{
+    text-align: center;
+    width: 30%;
+}
+/*
+.card{
+    max-height: 300px;
+} */
