@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function(){
+        let corrects = document.querySelectorAll('.correct');
+        for(let i = 0; i < corrects.length; i++) {
+              corrects[i].addEventListener('click', function() {
+                  corrects[i].style.backgroundColor = 'green';
+
+          });
+        };
+          let incorrects = document.querySelectorAll('.incorrect');
+          for(let i = 0; i < incorrects.length; i++) {
+              incorrects[i].addEventListener('click', function() {
+                  incorrects[i].style.backgroundColor = 'red';
+
+          });
+        };
+      });
+
+  </script>
+
+  </head>
+<body class="table">
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="index.html">Головна</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="books.html">Мої домашні улюбленці</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Quiz.html">Задачки на логіку</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutMe.html">Про мене</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      </header>
+
+      <div class="container">
+        <div class="section">
+            <hr>
+                <h4>В 12-поверховому будинку є ліфт. На першому поверсі живе всього 2 людей, від поверху до поверху кількість мешканців збільшується вдвічі.
+                  На якому поверсі в цьому будинку частіше інших натискається кнопка виклику ліфта?</h4>
+                <button class="correct"> На 1му </button>
+                <button class="incorrect"> На 12му </button>
+                <button class="incorrect"> На 3 поверх </button>
+                <p id="feedback1"></p>
+         </div>
+
+        <div class="section">
+
+          <hr>
+              <h4>Джордж Вашингтон, Шерлок Холмс, Вільям Шекспір, Людвіг Ван Бетховен, Наполеон Бонапарт і Нерон – хто з них принципово відрізняється від інших?</h4>
+              <button class="correct"> Шерлок Холмс </button>
+              <button class="incorrect"> Вільям Шекспір </button>
+              <button class="incorrect"> Наполеон Бонапарт </button>
+
+              <p id="feedback1"></p>
+        </div>
+        <div class="section">
+
+          <hr>
+              <h4>Один ведмідь вирішив розпочати подорож. Він пройшов кілометр на південь, потім повернув праворуч і пройшов кілометр на захід, потім повернув ще праворуч, пройшов кілометр на північ. Виявилось що він прийшов туди звідки розпочинав подорож. Якого кольору ведмідь?</h4>
+              <button class="incorrect">Бурий</button>
+              <button class="incorrect">Сірий</button>
+              <button class="correct">Білий</button>
+
+              <p id="feedback1"></p>
+        </div>
+    </div>
+  </div>
+    <footer align="center">
+      <p>Make in 2022 by Sinuyk Alina</p>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+  </html>
